@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>homepage</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="./" media="(max-width:600px)">
+    </head>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .btnav {
+            margin-top: 10px;
+            width: 100%;
+            /* text-align: center; */
+
+
+        }
+
+        .btnav ul {
+            padding: 20px;
+            /* display: inline-block; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .btnav ul li {
+            float: left;
+            margin-right: 30px;
+            list-style-type: none;
+        }
+
+        .btnav ul li a {
+            text-decoration: none;
+        }
+
+        #headerNav {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 5px;
+        }
+
+        .logo {
+            float: left;
+            position: absolute;
+            margin-left: 10px;
+        }
+
+        .right li {
+            float: right;
+            margin : 10px;
+            list-style-type: none;
+        }
+
+        .main-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .md-container {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .MDbox {
+            width: 80%;
+            background-color: #eee;
+        }
+
+        .MDbox ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+       
+        .MDbox li {
+            border: 1px gray solid;
+            width: 17%;
+            height: 200px;
+            list-style: none;
+            text-align: center;
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .bn-container {
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bnbox {
+            width: 70%;
+        }
+
+        .bnbn 
+            {
+                background-color: black;
+                width: 100%;
+                margin-bottom: 80px;
+            }
+        
+        .bn-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .bn-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .bnbn {
+            width: 100%;
+        }
+
+        .bn-1 {
+            width: 70%;
+            height: 500px;
+
+        }
+
+        .bn-1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bn-2 {
+            width: 30%;
+            height: 500px;
+        }
+
+        .bn-3 {
+            width: 100%;
+        }
+
+        .bn-22 {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bn-22 ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bn-22 li {
+            display: flex;
+            border: 1px gray solid;
+            width: 100%;
+            height: 45%;
+            list-style: none;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .rt-1 {
+            width: 70%;
+        }
+
+        .rt-2 {
+            margin-left: 10px;
+            width: 65%;
+        }
+
+        .bn-22 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bn-22 p {
+            text-align: left;
+            float: left;
+        }
+
+        .bn-row h4 {
+            text-align: center;
+            padding: 40px 40px 20px;
+            border-bottom: solid black 1px;
+        }
+
+        .rv-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+        }
+
+        .rv-box {
+            width: 80%;
+            background-color: #eee;
+        }
+
+        .rv-container ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: beige;
+        }
+
+        .rv-container li {
+            width: 23%;
+            height: 300px;
+            list-style: none;
+            text-align: center;
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+    </style>
+
+    <body>
+        <div id="container">
+
+            <!-- 상단 헤더 start -->
+            <div id="header">
+
+                <!-- 상단 탑 바 start -->
+                <div id="headerNav" style="background-color: #eee">
+                    <div class="new">
+
+                        <img class="logo" width="40px;" height="40px;" src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png">
+
+                        <ul class="right">
+                            <li>로그인</li>
+                            <li>회원가입</li>
+                            <li>고객센터</li>
+                            <li>장바구니</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 상단 탑 바 end -->
+
+
+                <!-- 헤더 이미지 start -->
+                <div id="content">
+                    <div style="background-color: black; width: 100%; height: 300px;">
+                    </div>
+                </div>
+                <!-- 헤더 이미지 end -->
+
+                <!-- 하단 내비게이션 바 start -->
+                <div class="btnav" style="background-color: yellow; width:100%; height:50px;">
+                    <ul>
+                        <li><a href="">카테고리1</a></li>
+                        <li><a href="">카테고리2</a></li>
+                        <li>카테고리3</li>
+                        <li>카테고리4</li>
+                        <li>카테고리5</li>
+                    </ul>
+                </div>
+                <!-- 내비게이션 바 end -->
+            </div>
+            <!-- 상단 헤더 end -->
+
+            <!-- 상단 메인 콘텐츠 이미지 start -->
+            <div class="main-container">
+                <div id="main" style="background-color: gray; width:80%; height:400px;">
+                    <img src="">
+                </div>
+            </div>
+            <!-- 상단 메인 콘텐츠 이미지 end -->
+
+            <!-- MD Choice 첫번째 세션 start -->
+            <div class="md-container">
+                <div class="MDbox">
+
+                    <h3 style="padding: 30px; display: block; text-align: center;">MD's Choice</h3>
+
+                    <p style="padding: 30px; display: block; text-align: center;">MD가 선택한 추천 상품 입니다.</p>
+
+                    <ul>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p><p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p><p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                    </ul>
+                    <ul style="margin-bottom: 15px;">
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p><p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p><p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- MD Choice 첫번째 세션 end -->
+
+
+            <!-- MD Choice 두번째 세션 start -->
+            <div class="md-container">
+                <div class="MDbox">
+
+                    <h3 style="padding: 30px; display: block; text-align: center;">MD's Choice</h3>
+
+                    <p style="padding: 30px; display: block; text-align: center;">MD가 선택한 추천 상품 입니다.</p>
+
+                    <ul>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p><p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p><p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                    </ul>
+                    <ul style="margin-bottom: 15px;">
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p><p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p><p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                        <li><img src="./Day07/images/back1.png" width="85%;" height="40%;">
+                        <p>제품명</p> <p>가격</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- MD Choice 두번째 세션 end -->
+
+            <!-- 배너 start -->
+            <div class="bn-container">
+                <div class="bnbox">
+
+                    <h3 style="padding: 30px; display: block; text-align: center;">TV & MOVIE In ARIA FURNITURE</h3>
+
+                    <p style="padding: 30px; display: block; text-align: center;">#TV#드라마#영화속#아리아퍼니쳐</p>
+
+                    <div class="bnbn">
+                        
+                        <div class="bn-row">
+                            <div class="bn-1"><img src="./Day07/images/back1.png"></div>
+                            <div class="bn-2" style=background-color:white;>
+                                <div class="bn-22">
+                                    <h4>title title title</h4>
+                                    <ul>
+                                        <li>
+                                            <div class="rt-1"><img src="/Day07/images/movie.jpg"></div>
+                                            <div class="rt-2"><p>물품명</p><br><p>코드명</p><br><p>가격</p></div>
+                                        </li>
+
+                                        <li>
+                                            <div class="rt-1"><img src="/Day07/images/movie.jpg"></div>
+                                            <div class="rt-2"><p>물품명</p><br><p>코드명</p><br><p>가격</p></div>
+                                        </li>
+
+                                        <li>
+                                            <div class="rt-1"><img src="/Day07/images/movie.jpg"></div>
+                                            <div class="rt-2"><p>물품명</p><br><p>코드명</p><br><p>가격</p></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bn-column">
+                            <div class="bn-3" style=background-color:yellow;>ㅇㅇ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 배너 end -->
+
+            <!-- review start -->
+            <div class="rv-container">
+
+                <div class="rv-box">
+
+                    <h2 style="padding: 30px; display: block; text-align: center;">Best REVIEW</h2>
+
+                    <ul>
+                        <li><img src="/Day07/images/computer.png" width="90%;" height="90%;">
+                        <p>수납침대는 아리아 퍼니쳐</p>
+                        </li>
+                        <li><img src="/Day07/images/computer.png" width="90%;" height="90%;">
+                        <p>수납침대는 아리아 퍼니쳐</p>
+                        </li>
+                        <li><img src="/Day07/images/computer.png" width="90%;" height="90%;">
+                        <p>수납침대는 아리아 퍼니쳐</p>
+                        </li>
+                        <li><img src="/Day07/images/computer.png" width="90%;" height="90%;">
+                        <p>수납침대는 아리아 퍼니쳐</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
