@@ -1,0 +1,682 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>homepage</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="./" media="(max-width:600px)">
+    </head>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #haeder {
+            position: relative;
+        }
+
+        #headerNav {
+            width: 100%;
+            height: 35px;
+            font-size: 12px;
+            padding: 5px;
+        }
+
+        .right li {
+            float: right;
+            margin : 10px;
+            list-style-type: none;
+        }
+
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 150px;
+        }
+
+        #content .logo {
+            margin: 0 atuo;
+            width: 100px;
+            height: 100px;
+        }
+
+        .btnav {
+            width: 100%;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: #F5EFE7 solid 1px;
+            border-bottom: #F5EFE7 solid 1px;
+            margin-top : 10px;
+            margin-bottom : 30px;
+        }
+
+        .btnav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+
+        .btnav ul li {
+            float: left;
+            margin: 0 auto;
+            list-style-type: none;
+        }
+
+        .btnav ul li a {
+            text-decoration: none;
+        }
+
+        .btnav ul li a:active {
+            color: #606C5D;
+        }
+
+        .btnav ul li a:visited {
+            color: #606C5D;
+        }
+
+        .main-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main .main-pic{
+            width:80%;
+        }
+
+        .md-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .MDbox {
+            width: 80%;
+        }
+
+        .MDbox ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+       
+        .MDbox li {
+            border: 1px #CDC2AE solid;
+            border-radius: 17px;
+            width: 17%;
+            height: 230px;
+            list-style: none;
+            text-align: center;
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .MDbox ul li img {
+            width: 85%;
+            height: 160px;
+        }
+
+        .MDbox ul li p {
+            font-size: 13px;
+        }
+
+        .MDbox ul li .pricenm {
+            font-size: 15px;
+            font-weight: bold;
+            color: #116A7B;
+            padding: 5px;
+        }
+
+        .bn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bnbox {
+            width: 70%;
+        }
+
+        .bnbn 
+            {
+                width: 100%;
+                margin-bottom: 80px;
+            }
+        
+        .bn-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .bn-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .bnbn {
+            width: 100%;
+        }
+
+        .bn-1 {
+            width: 70%;
+            height: 500px;
+
+        }
+
+        .bn-1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bn-2 {
+            width: 30%;
+            height: 500px;
+        }
+
+        .bn-3 {
+            width: 100%;
+        }
+
+        .bn-22 {
+            width: 70%;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bn-22 ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .bn-22 ul li {
+            display: flex;
+            border: 1px gray solid;
+            width: 100%;
+            height: 45%;
+            list-style: none;
+            margin-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .bn-22 .rt-1 {
+            width: 20%;
+            height: 100%;
+        }
+
+
+        .bn-22 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bn-22 .rt-2 {
+            margin-left: 10px;
+        }
+
+        .bn-22 .rt-2 p {
+            text-align: left;
+            display: block;
+            float: left;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .rt-2 .manu {
+            color: #6e6e6e
+        }
+
+        .rt-2 .manu:hover {
+            text-decoration-line: underline;
+        }
+
+        .rt-2 .codenm {
+            color: #86B404;
+        }
+
+        .rt-2 .codenm:hover {
+            text-decoration-line: underline;
+        }
+
+        .bn-row h4 {
+            text-align: center;
+            padding: 40px 40px 20px;
+            border-bottom: solid black 1px;
+        }
+
+        .rv-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rv-box {
+            width: 80%;
+        }
+
+        .rv-box ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rv-container ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            overflow: auto;
+            margin-bottom: 50px;
+        }
+
+        .rv-container li {
+            width: 22%;
+            height: 30%;
+            list-style: none;
+            text-align: center;
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .rvtitle {
+            background-color: white;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+
+        .nt-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nt-box {
+            width: 80%;
+        }
+
+        .nt-box ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nt-box li {
+            border: 1px gray solid;
+            box-sizing: border-box;
+            width: 31.3333%;
+            height: 220px;
+            list-style: none;
+            margin-top: 15px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .nt-box ul li h3 {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .nt-deco {
+            border-bottom: solid black 1px;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            opacity: 0.4;
+        }
+
+
+        .nttext {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: -15px;
+        }
+
+        .nttext p {
+            text-align: center;
+        }
+
+        .date {
+            text-align: right;
+        }
+
+        .nt-box li button {
+            padding: 5px;
+            width: 31.3333%;
+            height: 40px;
+            font-size: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px 5px ;
+            border-width: 1px;
+        }
+
+        .con {
+            margin: 0 auto;
+            width: 1000px;
+            text-align: center;
+            overflow: auto;
+            margin: 0 auto;
+        }
+
+    </style>
+
+    <body>
+        <div id="container">
+
+            <!-- 상단 헤더 start -->
+            <div id="header">
+
+                <!-- 상단 탑 바 start -->
+                <div id="headerNav" style="background-color: #eee">
+                        <ul class="right">
+                            <li>로그인</li>
+                            <li>회원가입</li>
+                            <li>고객센터</li>
+                            <li>장바구니</li>
+                        </ul>
+                </div>
+                <!-- 상단 탑 바 end -->
+
+
+                <!-- 헤더 로고 start -->
+                <div id="content">
+                    <a href=""><img class="logo" src="./Day07/images/logo2.png"></a>
+                </div>
+                <!-- 헤더 로고 end -->
+
+                <!-- 하단 내비게이션 바 start -->
+                <div class="btnav">
+                    <ul>
+                        <li><a href="">카테고리1</a></li>
+                        <li><a href="">카테고리2</a></li>
+                        <li><a href="">카테고리3</a></li>
+                        <li><a href="">카테고리4</a></li>
+                        <li><a href="">카테고리5</a></li>
+                    </ul>
+                </div>
+                <!-- 내비게이션 바 end -->
+            </div>
+            <!-- 상단 헤더 end -->
+
+            <!-- 상단 메인 콘텐츠 이미지 start -->
+            <div class="main-container">
+                <div id="main">
+                    <img class="main-pic" src="./Day07/images/sofa.png">
+                </div>
+            </div>
+            <!-- 상단 메인 콘텐츠 이미지 end -->
+
+            <!-- MD Choice 첫번째 세션 start -->
+            <div class="md-container">
+                <div class="MDbox">
+
+                    <h3 style="padding: 30px; display: block; text-align: center;">MD's Choice</h3>
+
+                    <p style="padding: 20px; display: block; text-align: center;">MD가 선택한 추천 상품 입니다.</p>
+
+                    <ul>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p><p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p><p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                    </ul>
+                    <ul style="margin-bottom: 15px;">
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p><p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p><p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- MD Choice 첫번째 세션 end -->
+
+
+            <!-- MD Choice 두번째 세션 start -->
+            <div class="md-container">
+                <div class="MDbox">
+
+                    <h3 style="padding: 30px; display: block; text-align: center;">MD's Choice</h3>
+
+                    <p style="padding: 20px; display: block; text-align: center;">MD가 선택한 추천 상품 입니다.</p>
+
+                    <ul>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p><p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p><p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                    </ul>
+                    <ul style="margin-bottom: 15px;">
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p><p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p><p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                        <li>
+                            <img src="./Day07/images/back1.png">
+                            <p class="pricenm">제품명</p> <p>가격</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- MD Choice 두번째 세션 end -->
+
+            <!-- 배너 start -->
+            <div class="bn-container">
+                <div class="bnbox">
+
+                    <h3 style="padding: 30px; display: block; text-align: center;">TV & MOVIE In ARIA FURNITURE</h3>
+
+                    <p style="padding: 30px; display: block; text-align: center;">#TV#드라마#영화속#아리아퍼니쳐</p>
+
+                    <div class="bnbn">
+                        
+                        <div class="bn-row">
+                            <div class="bn-1">
+                                <a href="https://tvn.cjenm.com/ko/secretarykim/" target="_blank">
+                                    <img src="./Day07/images/back1.png">
+                                </a>
+                            </div>
+                            <div class="bn-2">
+                                <div class="bn-22">
+                                    <h4>title</h4>
+                                    <ul>
+                                        <li>
+                                            <img class="rt-1" src="/Day07/images/movie.jpg">
+                                            <a href="#" class="rt-2">
+                                                <p class="manu">물품명</p><br>
+                                                <p class="codenm">코드명</p><br>
+                                                <p class="manu">가격</p>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <img class="rt-1" src="/Day07/images/movie.jpg">
+                                            <a href="#" class="rt-2">
+                                                <p class="manu">물품명</p><br>
+                                                <p class="codenm">코드명</p><br>
+                                                <p class="manu">가격</p>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <img class="rt-1" src="/Day07/images/movie.jpg">
+                                            <a href="#" class="rt-2">
+                                                <p class="manu">물품명</p><br>
+                                                <p class="codenm">코드명</p><br>
+                                                <p class="manu">가격</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="bn-column">
+                            <div class="bn-3" style=background-color:yellow;>ㅇㅇ</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 배너 end -->
+
+            <!-- review start -->
+            <div class="rv-container con">
+
+                <div class="rv-box">
+
+                    <h2 style="padding: 30px; display: block; text-align: center;">Best REVIEW</h2>
+
+                    <ul>
+                        <li>
+                            <img src="/Day07/images/computer.png" width="90%;" height="90%;">
+                            <p class="rvtitle">수납침대는 아리아 퍼니쳐</p>
+                        </li>
+                        <li>
+                            <img src="/Day07/images/computer.png" width="90%;" height="90%;">
+                            <p class="rvtitle">수납침대는 아리아 퍼니쳐</p>
+                        </li>
+                        <li>
+                            <img src="/Day07/images/computer.png" width="90%;" height="90%;">
+                            <p class="rvtitle">수납침대는 아리아 퍼니쳐</p>
+                        </li>
+                        <li>
+                            <img src="/Day07/images/computer.png" width="90%;" height="90%;">
+                            <p class="rvtitle">수납침대는 아리아 퍼니쳐</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- review end -->
+
+            <!-- notice start -->
+            <div class="nt-container con" style="margin-bottom: 50px;">
+
+                <div class="nt-box">
+                    <ul>
+                        <li>
+                            <h3 class="nt-title">공지사항</h3>
+                            <hr class="nt-deco">
+                            <span class="nttext"><p>[공지]텍스트1</p><p class="date">2020-09-15</p></span><br>
+                            <span class="nttext"><p>[공지]텍스트2</p><p class="date">2020-09-16</p></span><br>
+                            <span class="nttext"><p>[공지]텍스트1</p><p class="date">2020-09-17</p></span><br>
+                            <span class="nttext"><p>[공지]텍스트1</p><p class="date">2020-09-18</p></span><br>
+                            <span class="nttext"><p>[공지]텍스트1</p><p class="date">2020-09-19</p></span><br>
+                        </li>
+                        <li>
+                            <h3 class="nt-title">고객센터</h3>
+                            <hr class="nt-deco">
+                            <div class="nt-side" style="display:flex; flex-direction:row; justify-content: space-between;">
+                                <div class="nt-aside" style="display:flex; flex: 1; flex-direction: column; width: 44%;">
+                                    <h2>1588-7410</h2>
+                                    <h5>FAX. 031-222-4556</h5>
+                                </div>
+                                <div class="nt-bside" style="display:flex; width: 44%;">
+                                    <button>공지사항</button>
+                                    <button>1:1문의</button>
+                                    <button>FAQ</button>
+                                </div>
+                            </div>
+                            <p style="text-align: left; font-size: 12px; margin-left: 10; margin: 15px 15px 0;">상담시간 : 10:00-17:00</p>
+                            <p style="text-align: left; font-size: 12px; margin-left: 10; margin: 0 15px 0;">점심시간 : 12:15-13:15</p>
+
+                        </li>
+                        <li>
+                            <h3 class="nt-title">FAQ</h3>
+                            <hr class="nt-deco">
+                            <button>주문/배송관련</button>
+                            <button>결제관련 문의</button>
+                            <button>A/S관련 문의</button>
+                            <button>회원관련 문의</button>
+                            <button>제품관련 문의</button>
+                            <button>기타 문의</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
