@@ -13,6 +13,13 @@
         * {
             padding: 0;
             margin: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        h2 {
+            padding: 30px;
+            display: block;
+            text-align: center;
         }
 
         #haeder {
@@ -30,6 +37,11 @@
             float: right;
             margin : 10px;
             list-style-type: none;
+        }
+
+        .right li a {
+            text-decoration: none;
+            color: black;
         }
 
         #content {
@@ -105,10 +117,9 @@
 
         .MDbox ul {
             display: flex;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             justify-content: center;
             align-items: center;
-            
         }
        
         .MDbox li {
@@ -139,6 +150,62 @@
             padding: 5px;
         }
 
+        .md-container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #CDC2AE;
+        }
+
+        .MDbox2 {
+            width: 80%;
+        }
+
+        .MDbox2 ul {
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .MDbox2 li {
+            /* border: 1px #CDC2AE solid;
+            border-radius: 17px; */
+            width: 21%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .MDbox2 li:hover {
+            background-color: #C2DEDC;
+        }
+
+        .MDbox2 ul li img {
+            width: 85%;
+            height: 160px;
+        }
+
+        .MDbox2 ul li p {
+            font-size: 13px;
+            display: block;
+        }
+
+        .MDbox2 ul li .pricenm {
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+            color: #116A7B;
+            padding: 5px;
+        }
+
         .bn-container {
             display: flex;
             justify-content: center;
@@ -151,15 +218,13 @@
 
         .bnbn 
             {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
                 width: 100%;
                 margin-bottom: 80px;
+                background-color: #116A7B;
             }
-        
-        .bn-row {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
 
         .bn-column {
             display: flex;
@@ -184,61 +249,67 @@
             height: 480px;
         }
 
-        .bn-3 {
-            width: 100%;
-        }
-
         .bn-22 {
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
             width: 70%;
+            height: 100%;
             flex-wrap: wrap;
             margin-left: auto;
             margin-right: auto;
         }
 
         .bn-22 ul {
-            display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
             box-sizing: border-box;
             padding: 20px;
         }
 
         .bn-22 ul li {
             display: flex;
-            border: 1px gray solid;
             width: 100%;
-            height: 45%;
             list-style: none;
             margin-bottom: 30px;
             margin-bottom: 40px;
         }
 
-        .bn-22 .rt-1 {
-            width: 20%;
-            height: 100%;
+        .bn-22 h4 {
+            padding: 15px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            color: #ECE5C7;
         }
 
-
-        .bn-22 img {
-            width: 100%;
+        .bn-22 .rt-1 {
+            width: 45%;
             height: 100%;
         }
 
         .bn-22 .rt-2 {
-            margin-left: 10px;
+            margin-left: 15px;
         }
 
         .bn-22 .rt-2 p {
             text-align: left;
             display: block;
             float: left;
-            margin-top: 5px;
-            margin-bottom: 5px;
+            margin-top: 2px;
+            margin-bottom: 2px;
         }
 
         .rt-2 .manu {
-            color: #6e6e6e
+            color: #fff;
+            font-size: large;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .rt-2 .manu:active {
+            color: #fff;
+        }
+
+        .rt-2 .manu:visited {
+            color: #fff;
         }
 
         .rt-2 .manu:hover {
@@ -246,83 +317,108 @@
         }
 
         .rt-2 .codenm {
-            color: #86B404;
+            color: #FFEEBB;
+            font-size: medium;
         }
 
         .rt-2 .codenm:hover {
             text-decoration-line: underline;
         }
 
-        .bn-row h4 {
-            text-align: center;
-            padding: 40px 40px 20px;
-            border-bottom: solid black 1px;
+        .rt-2 button {
+            width: 80px;
+            height: 30px;
+            padding: 5px;
+            border: 1px solid #C2DEDC;
+            border-bottom: 3px solid #C2DEDC;
+            font-family: 'Lato', sans-serif;
+            font-weight: 600;
+            background: transparent;
+            color: #C2DEDC;
+            margin-top: 6px;
+        }
+
+        .rt-2 button:hover {
+            background-color: #99DBF5;
+            color: black;
         }
 
         .rv-container {
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 420px;
+            background-color: #ECE5C7;
         }
 
         .rv-box {
-            width: 80%;
+            width: 73%;
+            height: 100%;
         }
 
-        .rv-box ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .rv-container ul {
+        .rv-container .rv-box ul {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             overflow: auto;
-            margin-bottom: 50px;
         }
 
-        .rv-container li {
-            width: 22%;
-            height: 30%;
+        .rv-container .rv-box ul li {
+            width: 31.3333%;
             list-style: none;
             text-align: center;
-            margin-top: 15px;
-            margin-left: 10px;
-            margin-right: 10px;
+            padding: 10px;
+        }
+
+        .rv-container .rv-box ul li:hover {
+            background-color: #CDC2AE;
+        }
+
+        .rv-container .rv-box ul li img {
+            width: 90%;
+            height: 200px;
         }
 
         .rvtitle {
-            background-color: white;
             margin-top: 5px;
-            font-size: 15px;
+            font-size: 16px;
+            padding: 10px;
+            color: #116A7B;
         }
 
         .nt-container {
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 250px;
         }
 
         .nt-box {
-            width: 80%;
+            width: 73%;
+            height: 100%;
+            margin-bottom: 30px;
         }
 
         .nt-box ul {
             display: flex;
             flex-wrap: wrap;
+            overflow: visible;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 30px;
+            border: 1px #CDC2AE solid;
+            border-radius: 17px;
         }
 
         .nt-box li {
-            border: 1px gray solid;
+            flex-wrap: wrap;
+            /* border: 1px gray solid; */
             box-sizing: border-box;
             width: 31.3333%;
-            height: 220px;
+            height: 230px;
             list-style: none;
             margin-top: 15px;
             margin-left: 5px;
@@ -334,16 +430,26 @@
             text-align: left;
         }
 
-        .nttext {
+        .nt-box ul li span {
             display: flex;
             justify-content: space-between;
             margin-left: 10px;
             margin-right: 10px;
-            margin-bottom: -15px;
+            margin-bottom: -22px;
         }
 
-        .nttext p {
+        .nt-box ul li span p {
             text-align: center;
+            font-size: 14px;
+        }
+
+        .nt-box ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nt-box ul li button:hover {
+            background-color: #CDC2AE;
         }
 
         .date {
@@ -352,12 +458,36 @@
 
         .nt-box li button {
             padding: 5px;
-            width: 31.3333%;
+            width: 28.3333%;
             height: 40px;
             font-size: 10px;
             margin-bottom: 5px;
             border-radius: 10px 5px ;
             border-width: 1px;
+        }
+
+        .nt-box .nt-side {
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+        }
+
+        .nt-box .nt-side .nt-aside {
+            display:flex;
+            flex: 1;
+            flex-direction: column;
+            width: 44%;
+        }
+
+        .nt-box .nt-side .nt-bside {
+            display:flex;
+            width: 44%;
+        }
+
+        .nt-box .nt-cside {
+            text-align: left;
+            font-size: 12px;
+            margin: 20px 25px;
         }
 
         #footer {
@@ -391,22 +521,24 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            height: 170px;
         }
 
         .footerend ul {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80%;
+            width: 75%;
         }
 
         .footerend .footer-1 img {
-            width: 80%;
+            width: 180px;
+            height: 180px;
         }
 
         .footerend .footer-2 {
             width: 100%;
-            font-size: 12px;
+            font-size: 14px;
             text-align: left;
             padding: 30px
         }
@@ -436,14 +568,25 @@
             opacity: 0.4;
         }
 
+        .nt-deco2 {
+            border-bottom: solid black 1px;
+            width: 94%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            opacity: 0.4;
+        }
 
-        .con {
+        .mg {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+
+        /* .con {
             margin: 0 auto;
             width: 1000px;
             text-align: center;
-            overflow: auto;
-            margin: 0 auto;
-        }
+        } */
 
     </style>
 
@@ -456,10 +599,10 @@
                 <!-- 상단 탑 바 start -->
                 <div id="headerNav" style="background-color: #eee">
                         <ul class="right">
-                            <li>로그인</li>
-                            <li>회원가입</li>
-                            <li>고객센터</li>
-                            <li>장바구니</li>
+                            <li><a href="">로그인</a></li>
+                            <li><a href="">회원가입</a></li>
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">장바구니</a></li>
                         </ul>
                 </div>
                 <!-- 상단 탑 바 end -->
@@ -495,11 +638,9 @@
 
             <!-- MD Choice 첫번째 세션 start -->
             <div class="md-container">
-                <div class="MDbox">
+                <div class="MDbox mg">
 
-                    <h3 style="padding: 30px; display: block; text-align: center;">Best Product</h3>
-
-                    <p style="padding: 20px; display: block; text-align: center;">MD가 선택한 추천 상품 입니다.</p>
+                    <h2>OUR PRODUCTS</h2>
 
                     <ul>
                         <li>
@@ -507,41 +648,41 @@
                             <p class="pricenm">제품명</p><p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/98.jpg">
                             <p class="pricenm">제품명</p><p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn2.jpg">
                             <p class="pricenm">제품명</p> <p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn6.png">
                             <p class="pricenm">제품명</p> <p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn15.png">
                             <p class="pricenm">제품명</p> <p>가격</p>
                         </li>
                     </ul>
                     <ul style="margin-bottom: 15px;">
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn20.png">
                             <p class="pricenm">제품명</p><p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn4.png">
                             <p class="pricenm">제품명</p><p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn17.png">
                             <p class="pricenm">제품명</p> <p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn18.png">
                             <p class="pricenm">제품명</p> <p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn19.png">
                             <p class="pricenm">제품명</p> <p>가격</p>
                         </li>
                     </ul>
@@ -551,36 +692,31 @@
 
 
             <!-- MD Choice 두번째 세션 start -->
-            <div class="md-container">
-                <div class="MDbox">
+            <div class="md-container2">
+                <div class="MDbox2 mg">
 
-                    <h3 style="padding: 30px; display: block; text-align: center;">MD's Choice</h3>
-
-                    <p style="padding: 20px; display: block; text-align: center;">MD가 선택한 추천 상품 입니다.</p>
+                    <h2 style="padding: 0 30px;">BEST SELLER</h2>
+                    <p style="text-align: center; font-size: 14px;">한 주간 가장 많이 사랑 받은 베스트 제품</p>
 
                     <ul>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn9.png">
                             <p class="pricenm">제품명</p><p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn8.png">
                             <p class="pricenm">제품명</p><p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn5.png">
                             <p class="pricenm">제품명</p> <p>가격</p>
                         </li>
                         <li>
-                            <img src="./Day07/images/back1.png">
-                            <p class="pricenm">제품명</p> <p>가격</p>
-                        </li>
-                        <li>
-                            <img src="./Day07/images/back1.png">
+                            <img src="./Day07/images/fn16.png">
                             <p class="pricenm">제품명</p> <p>가격</p>
                         </li>
                     </ul>
-                    <ul style="margin-bottom: 15px;">
+                    <!-- <ul style="margin-bottom: 15px;">
                         <li>
                             <img src="./Day07/images/back1.png">
                             <p class="pricenm">제품명</p><p>가격</p>
@@ -601,20 +737,20 @@
                             <img src="./Day07/images/back1.png">
                             <p class="pricenm">제품명</p> <p>가격</p>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
             <!-- MD Choice 두번째 세션 end -->
 
             <!-- 배너 start -->
             <div class="bn-container">
-                <div class="bnbox">
+                <div class="bnbox mg">
 
-                    <h2 style="padding: 30px; display: block; text-align: center; padding: 40px;">#TV#드라마#영화속#아리아퍼니쳐</h2>
+                    <h2>#TV / 드라마 / 영화 속 제품 </h2>
 
-                    <div class="bnbn" style="background-color: #116A7B">
+                    <div class="bnbn">
                         
-                        <div class="bn-row">
+                        <!-- <div class="bn-row"> -->
                             <div class="bn-1">
                                 <a href="https://tvn.cjenm.com/ko/secretarykim/" target="_blank">
                                     <img src="./Day07/images/banner.jpg">
@@ -622,38 +758,38 @@
                             </div>
                             <div class="bn-2">
                                 <div class="bn-22">
-                                    <h4>공간의 품격</h4>
+                                    <h4>FIND IT !</h4>
                                     <ul>
                                         <li>
-                                            <img class="rt-1" src="/Day07/images/movie.jpg">
+                                            <img class="rt-1" src="/Day07/images/rv1.png">
                                             <a href="#" class="rt-2">
-                                                <p class="manu">물품명</p><br>
-                                                <p class="codenm">코드명</p><br>
-                                                <p class="manu">가격</p>
+                                                <p class="manu">white sofa</p> <br>
+                                                <p class="codenm">\500,000</p> <br>
+                                                <button>CART</button>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <img class="rt-1" src="/Day07/images/movie.jpg">
+                                            <img class="rt-1" src="/Day07/images/rv2.png">
                                             <a href="#" class="rt-2">
-                                                <p class="manu">물품명</p><br>
-                                                <p class="codenm">코드명</p><br>
-                                                <p class="manu">가격</p>
+                                                <p class="manu">wood shelf</p><br>
+                                                <p class="codenm">\80,000</p><br>
+                                                <button>CART</button>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <img class="rt-1" src="/Day07/images/movie.jpg">
+                                            <img class="rt-1" src="/Day07/images/rv3.png">
                                             <a href="#" class="rt-2">
-                                                <p class="manu">물품명</p><br>
-                                                <p class="codenm">코드명</p><br>
-                                                <p class="manu">가격</p>
+                                                <p class="manu">plant objet</p><br>
+                                                <p class="codenm">\100,000</p><br>
+                                                <button>CART</button>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        <!-- </div> -->
 
                         <!-- <div class="bn-column">
                             <div class="bn-3" style=background-color:yellow;>ㅇㅇ</div>
@@ -666,26 +802,23 @@
             <!-- review start -->
             <div class="rv-container con">
 
-                <div class="rv-box">
+                <div class="rv-box mg">
 
-                    <h2 style="padding: 30px; display: block; text-align: center;">Best REVIEW</h2>
+                    <h2>CUSTOMER'S BEST REVIEW</h2>
+                    <hr class="nt-deco2">
 
                     <ul>
                         <li>
-                            <img src="/Day07/images/computer.png" width="90%;" height="90%;">
-                            <p class="rvtitle">수납침대는 아리아 퍼니쳐</p>
+                            <img src="/Day07/images/review1.jpg">
+                            <p class="rvtitle">방의 분위기를 바꿔주는 가구로, <br> 소비가 아깝지 않은 선택입니다.</p>
                         </li>
                         <li>
-                            <img src="/Day07/images/computer.png" width="90%;" height="90%;">
-                            <p class="rvtitle">수납침대는 아리아 퍼니쳐</p>
+                            <img src="/Day07/images/review2.jpg">
+                            <p class="rvtitle">방의 분위기를 바꿔주는 가구로, <br> 소비가 아깝지 않은 선택입니다.</p>
                         </li>
                         <li>
-                            <img src="/Day07/images/computer.png" width="90%;" height="90%;">
-                            <p class="rvtitle">수납침대는 아리아 퍼니쳐</p>
-                        </li>
-                        <li>
-                            <img src="/Day07/images/computer.png" width="90%;" height="90%;">
-                            <p class="rvtitle">수납침대는 아리아 퍼니쳐</p>
+                            <img src="/Day07/images/review4.jpg">
+                            <p class="rvtitle">방의 분위기를 바꿔주는 가구로, <br> 소비가 아깝지 않은 선택입니다.</p>
                         </li>
                     </ul>
 
@@ -694,56 +827,61 @@
             <!-- review end -->
 
             <!-- notice start -->
-            <div class="nt-container con" style="margin-bottom: 50px;">
+            <div class="nt-container mg">
 
                 <div class="nt-box">
+
                     <ul>
                         <li>
-                            <h3 class="nt-title">공지사항</h3>
+                            <h3>공지사항</h3>
                             <hr class="nt-deco">
-                            <span class="nttext"><p>[공지]텍스트1</p><p class="date">2020-09-15</p></span><br>
-                            <span class="nttext"><p>[공지]텍스트2</p><p class="date">2020-09-16</p></span><br>
-                            <span class="nttext"><p>[공지]텍스트1</p><p class="date">2020-09-17</p></span><br>
-                            <span class="nttext"><p>[공지]텍스트1</p><p class="date">2020-09-18</p></span><br>
-                            <span class="nttext"><p>[공지]텍스트1</p><p class="date">2020-09-19</p></span><br>
+
+                            <span><a a href="#"><p>[공지]텍스트</p></a><p class="date">2020-09-15</p></span><br>
+                            <span><a a href="#"><p>[공지]텍스트</p></a><p class="date">2020-09-16</p></span><br>
+                            <span><a a href="#"><p>[공지]텍스트</p></a><p class="date">2020-09-17</p></span><br>
+                            <span><a a href="#"><p>[공지]텍스트</p></a><p class="date">2020-09-18</p></span><br>
+                            <span><a a href="#"><p>[공지]텍스트</p></a><p class="date">2020-09-19</p></span><br>
                         </li>
                         <li>
-                            <h3 class="nt-title">고객센터</h3>
+                            <h3>고객센터</h3>
                             <hr class="nt-deco">
-                            <div class="nt-side" style="display:flex; flex-direction:row; justify-content: space-between;">
-                                <div class="nt-aside" style="display:flex; flex: 1; flex-direction: column; width: 44%;">
-                                    <h2>1588-7410</h2>
+
+                            <div class="nt-side">
+                                <div class="nt-aside">
+                                    <h2 style="padding: 0;">1588-7410</h2>
                                     <h5>FAX. 031-222-4556</h5>
                                 </div>
-                                <div class="nt-bside" style="display:flex; width: 44%;">
-                                    <button>공지사항</button>
-                                    <button>1:1문의</button>
-                                    <button>FAQ</button>
+                                <div class="nt-bside">
+                                    <button><a href="#">공지<br>사항</a></button>
+                                    <button><a href="#">1:1<br>문의</a></button>
+                                    <button><a href="#">FAQ</a></button>
                                 </div>
                             </div>
-                            <p style="text-align: left; font-size: 12px; margin-left: 10; margin: 15px 15px 0;">상담시간 : 10:00-17:00</p>
-                            <p style="text-align: left; font-size: 12px; margin-left: 10; margin: 0 15px 0;">점심시간 : 12:15-13:15</p>
+                            <div class="nt-cside">
+                                <p>상담시간 : 10:00-17:00</p>
+                                <p>점심시간 : 12:15-13:15</p>
+                            </div>
 
                         </li>
                         <li>
-                            <h3 class="nt-title">FAQ</h3>
+                            <h3>FAQ</h3>
                             <hr class="nt-deco">
-                            <button>주문/배송관련</button>
-                            <button>결제관련 문의</button>
-                            <button>A/S관련 문의</button>
-                            <button>회원관련 문의</button>
-                            <button>제품관련 문의</button>
-                            <button>기타 문의</button>
-                        </li>
-                    </ul>
 
+                            <button><a href="#">주문/배송관련</a></button>
+                            <button><a href="#">결제관련 문의</a></button>
+                            <button><a href="#">A/S관련 문의</a></button>
+                            <button><a href="#">회원관련 문의</a></button>
+                            <button><a href="#">제품관련 문의</a></button>
+                            <button><a href="#">기타 문의</a></button>
+                        </li>
+                    </ul>              
                 </div>
             </div>
             <!-- notice end -->
 
             <!-- footer start -->
             <div id="footer">
-                <div class="footer-box">
+                <div class="footer-box mg">
                     <div class="footerNav">
                         <ul>
                             <li>회사소개</li><hr class="under-deco">
@@ -758,31 +896,17 @@
                                 <img src="./Day07/images/logo2.png">
                             </li>
                             <li class="footer-2">
-                                <p>상호 : 퍼니쳐(주)| 대표자명 : 김영환 | 사업자등록번호 : 126-86-48805</p>
+                                <p>상호 : 퍼니쳐(주)| 대표자명 : 주설아 | 사업자등록번호 : 126-86-48805</p>
                                 <p>통신판매신고번호 : 제 2015-경기성남-0010호 | 개인정보책임자 : 서강현</p>
                                 <p>E-Mail : aria@ariafurniture.co.kr</p>
                                 <p>Tel : 1588-7410|Fax : 031-712-0063</p>
                                 <p>COPYRIGHT (C) 2023 FURNITURE ALL RIGHTS RESERVED.</p>
                             <li>
                         </ul>
-                        <!-- <div class="">
-                                <img class="footer-1" src="./Day07/images/logo2.png">
-                        </div> -->
-                        <!-- <div class="footer-2">
-                            <li>
-                                <p>상호 : 퍼니쳐(주)| 대표자명 : 김영환|사업자등록번호 : 126-86-48805</p>
-                                <p>통신판매신고번호 : 제 2015-경기성남-0010호 |개인정보책임자 : 서강현</p>
-                                <p>E-Mail : aria@ariafurniture.co.kr</p>
-                                <p>Tel : 1588-7410|Fax : 031-712-0063</p>
-                                <p>COPYRIGHT (C) 2023 FURNITURE ALL RIGHTS RESERVED.</p>
-                            </li>
-                        </div> -->
                     </div>
                 </div>
             </div>
             <!-- footer end -->
-        </div>
-
         </div>
     </body>
 </html>
